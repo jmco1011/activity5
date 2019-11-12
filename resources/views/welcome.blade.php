@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Students</title>
+    <title>Activity5 </title>
 </head>
 <body>
 <div id='app'>
@@ -14,11 +14,11 @@
     <br/>
     Paid:
     <ul>
-        <li v-for='student in paidStudents'>@{{student.first_name}}</li>
+        <li v-for='student in paidStudents'>@{{student.last_name + ", " + student.first_name}}</li>
     </ul>
     Unpaid:
     <ul>
-        <li v-for='student in unpaidStudents'>@{{student.first_name}}</li>
+        <li v-for='student in unpaidStudents' >@{{student.last_name + ", " + student.first_name}}</li>
     </ul>
 </div>
 </body>
